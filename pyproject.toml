@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "affix-tree"
+version = "0.1.0"
+description = "A trie-like data structure that allows storing and searching data based on the longest matching prefix or suffix of a given string."
+authors = ["EAN-DB <support@ean-db.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/ean-db/affix-tree"
+repository = "https://github.com/ean-db/affix-tree"
+keywords = ["trie", "suffix tree", "prefix tree"]
+classifiers = [
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+flake8 = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
